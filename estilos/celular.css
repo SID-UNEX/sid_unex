@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* CELULAR */
+
+/* Adiciona box-sizing para evitar problemas de largura */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Correção importante */
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Remove o rolamento horizontal */
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar {
+    background-color: #082879 !important;
+}
+
+#logo {
+    padding-left: 5px;
+}
+
+main {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    width: 100%; /* Correção feita aqui */
+    flex: 1;
+}
+
+.topo {
+    background-color: #092E8D;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.texto {
+    margin-bottom: 0px;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto; /* Garante que a imagem seja responsiva */
+}
+
+main > figure {
+    background-color: rgb(228, 228, 228);
+}
+
+a {
+    text-decoration: none;
+}
+
+.informacao {
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    padding: 20px;
+    max-width: 90%; /* Garante que a largura não ultrapasse a tela */
+}
+
+main > div > figure > a > img {
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    text-align: left;
+    transition: all 0.3s linear;
+}
+
+main > div > figure > a > img:hover {
+    transform: scale(1.02); /* Correção: `scale` para `transform` */
+}
+
+main > div > figure > a > figcaption {
+    padding-top: 30px;
+    font-weight: bolder;
+    color: #031b58;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
+    font-size: 2em;
+    text-align: center; /* Garante que o texto fique centralizado */
+}
+
+main > figure > a > figcaption:hover {
+    color: #092E8D;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer > p#des > a {
+    color: rgb(97, 97, 97);
+    font-weight: 0.8em;
+}
+
+i#insta {
+    color: #031b58;
+    font-size: 1.2em;
+}
+
+i#youtube {
+    color: #031b58;
+    font-size: 1.4em;
+}
